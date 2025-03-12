@@ -1,0 +1,118 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    padding: 100px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color:  var(--color-theme);
+    --color-theme: rgb(38, 97, 190);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.profile-picture {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    background-color: gray;
+    background-image: url('../Iktomisaurus.png');
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid white;
+    top: -70px;
+}
+
+.edit-button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(12, 138, 12);
+    padding: 10px 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.edit-button:hover {
+    background-color: rgb(36, 77, 143);
+    color: aliceblue;
+}
+
+.name-group {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.name-group h1 {
+    line-height: 10px;
+}
+
+.name-group p {
+    font-weight: 500;
+    color: var(--color-theme);
+    font-size: 1.1rem;
+}
+
+.name-group p span {
+    color: gray;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.display-container div {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.display-container div span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.themed {
+    background-color: var(--color-theme);
+    color: white;
+}
+
+.light {
+    background-color: ghostwhite;
+    border: 2px solid rgb(240, 240, 240);
+    color: rgb(30, 30, 30);
+}

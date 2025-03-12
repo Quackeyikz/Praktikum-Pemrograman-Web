@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.input-form {
+    background-color: white;
+    border-radius: inherit;
+    padding: 25px;
+}
+
+.output-form {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: rgb(164, 240, 246);
+    padding: 25px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(239, 248, 255);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: 2px solid rgb(189, 222, 239);
+}
+
+label {
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+}
