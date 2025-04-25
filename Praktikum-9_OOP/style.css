@@ -1,0 +1,73 @@
+* {
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom right, aliceblue, rgb(211, 223, 233));
+    min-height: 100vh;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+}
+
+.item {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom right, aliceblue, rgb(211, 223, 233));
+    box-shadow: 10px 10px 15px #00000020, -5px -5px 10px #FFFFFF77, inset 0px 0px 10px 5px #FFFFFFAA;
+}
+
+.item p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.item > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.harga {
+    display: inline-block;
+    background-color: rgb(241, 172, 172);
+    background-image: linear-gradient(to bottom right, rgb(238, 19, 103), rgb(235, 143, 90));
+    border-bottom-right-radius: 1000px;
+    border-top-right-radius: 1000px;
+    padding: 5px 10px;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+.kategori {
+    background-color: rgb(233, 233, 233);
+    box-shadow: inset 5px 5px 10px #0924553a, 5px 5px 10px #FFFFFFAA;
+    border-radius: 1000px;
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(26, 19, 61);
+}
