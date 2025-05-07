@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS - File Handling</title>
+
+    <link rel="stylesheet" href="style/index-style.css">
+</head>
+<body>
+    <main>
+        <form action="/submit" method="post" name="form">
+            <div class="d-flex form-row">
+                <div class="d-flex-column">
+                    <label><b>Nama</b></label>
+                    <input type="text" name="nama" value="">
+                    
+                    <div class="d-flex">
+                        <div class="d-flex-column">
+                            <label><b>NRP</b></label>
+                            <input type="text" name="nrp" value="">
+                        </div>
+                        <div class="d-flex-column">
+                            <label><b>Kelas</b></label>
+                            <input type="text" name="kelas" value="">
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="d-flex-column">
+                            <br>
+                            <label><b>Jenis Kelamin</b></label>
+                            <div>
+                                <input type="radio" name="jenis-kelamin" value="Pria">Pria
+                                <input type="radio" name="jenis-kelamin" value="Wanita">Wanita
+                            </div>
+                            <br>
+                        </div>
+                        <div class="d-flex-column">
+                            <label><b>Agama</b></label>
+                            <select name="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <label><b>Tempat / Tanggal Lahir</b></label>
+                    <div class="d-flex">
+                        <input type="text" name="tempat-lahir" value="">
+                        <input type="date" name="tanggal-lahir" value="">
+                    </div>
+
+                    <br>
+
+                    <label><b>Alamat</b></label>
+                    <textarea name="alamat" cols="30" rows="3"></textarea>
+
+                    <br><br>
+
+                    <label><b>Riwayat Pendidikan</b></label>
+                    <div class="d-flex label-nogrow">
+                        <label><b>SD </b></label>
+                        <input type="text" name="sd" value="">
+                    </div>
+                    <div class="d-flex label-nogrow">
+                        <label><b>SMP </b></label>
+                        <input type="text" name="smp" value="">
+                    </div>
+                    <div class="d-flex label-nogrow">
+                        <label><b>SMA </b></label>
+                        <input type="text" name="sma" value="">
+                    </div>
+                </div>
+
+
+                <div class="d-flex-column">
+                    <br>
+                    <label><b>Email</b></label>
+                    <input type="email" name="email" value="">
+                    <br>
+                    <label><b>Homepage</b></label>
+                    <input type="url" name="homepage" value="">
+                    <br>
+                    <label><b>Hobi </b></label>
+                    <textarea name="hobi" cols="30" rows="3"></textarea>
+                    <br>
+                    <label><b>Interest </b></label>
+                    <div class="check"><input type="checkbox" name="komputer" value="Komputer"> Komputer</div>
+                    <div class="check"><input type="checkbox" name="sport" value="Sport"> Sport</div>
+                    <div class="check"><input type="checkbox" name="traveling" value="Traveling"> Traveling</div>
+                    <div class="check"><input type="checkbox" name="writing" value="Writing"> Writing</div>
+                    <div class="check"><input type="checkbox" name="reading" value="Reading"> Reading</div>
+
+                    <div class="submit-group">
+                        <input type="submit" name="submit">
+                        <input type="reset" name="Reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

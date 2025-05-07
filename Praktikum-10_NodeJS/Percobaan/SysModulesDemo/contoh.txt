@@ -1,0 +1,6 @@
+Halo, ini adalah contoh isi file teks yang nantinya dibaca oleh 
+
+NODE JS~
+
+Semangat belajarnya NodeJs cuy
+- Erik
