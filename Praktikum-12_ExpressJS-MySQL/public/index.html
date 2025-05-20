@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD | ExpressJS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body class="p-5 bg-success">
+    <main class="bg-white rounded-3 p-5 w-75 m-auto">
+        <h1>FORM DATA DIRI</h1>
+
+        <form action="/data-diri" method="post" name="form">
+            <div class="form-text mb-4">
+                Form data diri Praktikum Pemrograman Web. Dibuat oleh Erik Triayuda Wijaya (Bootstrap v5.3 Version)
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <label class="form-label" for="nama"><b>Nama</b></label>
+                    <input class="form-control mb-3" type="text" name="nama" value="" placeholder="Masukkan nama anda...">
+                    
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label" for="nrp"><b>NRP</b></label>
+                            <input class="form-control" type="text" name="nrp" value="" placeholder="Masukkan NRP anda...">
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="kelas"><b>Kelas</b></label>
+                            <input class="form-control" type="text" name="kelas" value="" placeholder="Masukkan Kelas anda...">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label" for="jenisKelamin"><b>Jenis Kelamin</b></label>
+                            <div>
+                                <input class="form-check-input" type="radio" name="jenisKelamin" value="Pria" id="radio_pria" checked>
+                                <label for="form-check-label" form="radio_pria">Pria</label>
+                                <input class="form-check-input" type="radio" name="jenisKelamin" value="Wanita" id="radio_wanita">
+                                <label for="form-check-label" form="radio_wanita">Wanita</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="agama"><b>Agama</b></label>
+                            <select name="agama" class="form-select">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <label class="form-label" for="tempatLahir"><b>Tempat / Tanggal Lahir</b></label>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input class="form-control" type="text" name="tempatLahir" value="" placeholder="Masukkan tempat lahir...">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="date" name="tanggalLahir" value="">
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="alamat" style="height: 100px"></textarea>
+                        <label class="form-label" for="alamat"><b>Alamat</b></label>
+                    </div>
+
+                    <label class="form-label"><b>Riwayat Pendidikan</b></label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><b>SD&nbsp;&nbsp;&nbsp;</b></span>
+                        <input type="text" name="sd" class="form-control" placeholder="Sekolah Dasar" value="">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><b>SMP</b></span>
+                        <input type="text" name="smp" class="form-control" placeholder="Sekolah Menengah Pertama" value="">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><b>SMA</b></span>
+                        <input type="text" name="sma" class="form-control" placeholder="Sekolah Menengah Atas" value="">
+                    </div>
+                </div>
+
+
+                <div class="col-4">
+                    <label class="form-label" for="email"><b>Email</b></label>
+                    <input class="form-control mb-3" type="email" name="email" value="" placeholder="contohemail@gmail.com">
+
+                    <label class="form-label" for="homepage"><b>Homepage</b></label>
+                    <input class="form-control mb-3" type="url" name="homepage" value="" placeholder="(Opsional) quackeyikz.github.io">
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="hobi" style="height: 70px"></textarea>
+                        <label class="form-label" for="hobi"><b>Hobi</b></label>
+                    </div>
+
+                    <label class="form-label"><b>Interest </b></label>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" name="komputer" type="checkbox" value="">
+                        <label class="form-check-label" for="komputer">Komputer</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" name="sport" type="checkbox" value="">
+                        <label class="form-check-label" for="sport">Sport</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" name="traveling" type="checkbox" value="">
+                        <label class="form-check-label" for="traveling">Traveling</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" name="writing" type="checkbox" value="">
+                        <label class="form-check-label" for="writing">Writing</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" name="reading" type="checkbox" value="">
+                        <label class="form-check-label" for="reading">Reading</label>
+                    </div>
+
+                    <div class="mt-5 d-flex flex-column gap-3">
+                        <input class="form-control btn btn-primary" type="submit" name="submit">
+                        <input class="form-control btn btn-outline-secondary" type="reset" name="Reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
