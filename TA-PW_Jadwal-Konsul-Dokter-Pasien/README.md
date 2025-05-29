@@ -1,23 +1,28 @@
-# CRUD Jadwal Konsultasi Dokter dan Pasien
+# "YULJE Medical Center" - CRUD Jadwal Konsultasi Dokter dan Pasien
 _Web App - Tugas Akhir Pemrograman Web_
+_Disclaimer: Nama dan inspirasi hanya berupa objek fiktif belaka_
 
 **Deskripsi**
 Projek aplikasi ini bertujuan untuk mengaplikasikan *study case* jadwal konsultasi antara dokter dengan pasien. Program menyajikan informasi mengenai penjadwalan yang telah dipesan oleh pasien dan status dari jadwal tersebut, mulai dari tanggal, deskripsi, status, dan lain-lain.
 
-**Flow**
-- Mengisi data diri pasien (login).
+**Flow Utama**
+- Mengisi data diri pasien.
 - Mengisi jadwal konsultasi tanggal, jam, spesialis, keluhan (dokter diassign oleh sistem).
 - Jika berhasil, mengarah ke pembayaran/transaksi.
 - Jika gagal, kembali ke halaman input konsultasi.
 
-##  Teknologi
+## Teknologi
 - Framework Bootstrap 5
 - HTML5
 - CSS3
-- ~~PHP~~ (WBA)
-- ~~NodeJS~~ (WBA)
-- ~~ExpressJS~~ (WBA)
+- ~~PHP~~
+- NodeJS
+- ExpressJS
 - MySQL (PhpMyAdmin)
+
+**Packages Installed**
+- mysql2
+- express
 
 ## Database Tables
 - **Jadwal_Konsultasi**
@@ -71,4 +76,30 @@ Projek aplikasi ini bertujuan untuk mengaplikasikan *study case* jadwal konsulta
   - *status* VARCHAR(30)
 
 ##### Struktur Direktori Projek
-(Will be Annouced)
+yulje-app/
+├─ database/
+├─ node_modules/
+├─ public/
+│  ├─ css/
+│  ├─ img/
+│  ├─ schemas/
+│  ├─ index.html
+├─ db.js
+├─ index.js
+├─ package-lock.json
+├─ package.json
+├─ README.md
+
+
+### FAQ Frequently Asked Questions
+Q: Bagaimana cara menjalankan aplikasi?
+A: Berikut adalah penjelasan singkat:
+1. **Copy repository** ini; 
+2. Buka **PhpMyAdmin > Import** (atau http://localhost/phpmyadmin/index.php?route=/server/import);
+3. **Copy** isi file [`database/yulje_pw.sql`](database/yulje_pw.sql) lalu paste.
+4. **Run** / jalankan script SQL-nya untuk membuat database beserta tabel-tabelnya. *Note: isi tabel kosong.*
+5. Buka folder projek, lalu jalankan `node index.js`. Pastikan untuk memeriksa konfigurasi db.js terkait user dan password database.
+6. Buka browser, lalu akses alamat http://localhost:3000.
+
+Q: Apakah aplikasi ini Open Source?
+A: Tidak, source-code aplikasi ini hanya dapat digunakan untuk penggunaan pribadi dan tidak diperkenankan untuk mengganti kepemilikan asli.
